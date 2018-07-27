@@ -14,4 +14,29 @@ ipc.on('video-1', function (event) {
   videos.webContents.send('video-1')
 })
 
+ipc.on('video-2', function (event) {
+  // recv button event and send to video
+  videos.webContents.send('video-2')
+})
+
+ipc.on('video-3', function (event) {
+  // recv button event and send to video
+  videos.webContents.send('video-3')
+})
+
+ipc.on('video-4', function (event) {
+  // recv button event and send to video
+  videos.webContents.send('video-4')
+})
+
+ipc.on('video-5', function (event) {
+  // recv button event and send to video
+  videos.webContents.send('video-5')
+})
+
+ipc.on('video-6', function (event) {
+  // recv button event and send to video
+  videos.webContents.send('video-6')
+})
+
 app.on('ready', createWindow)
