@@ -4,24 +4,32 @@ body{
 }
 
 p{
-	padding: 10px;
-	font: 20px/100% Arial, Helvetica, sans-serif;
+	font: 16px/100% Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 
 .wrapper {
 	display: grid;
-  	grid-template-columns: 32% 32% 33%;
+  	grid-template-columns: 49% 49%;
   	grid-gap: 10px;
   	background-color: #f26522;
   	color: #444;
 }
 
+div{
+	display: inline-block;
+}
+
 button {
-	height: 280px;
+	height: 180px;
+	width: 100%;
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
-	border-radius: .5em;
+	border-radius: 50%;
 	background-color: #fff;
 }
 button:hover {
@@ -30,4 +38,34 @@ button:hover {
 button:active {
 	position: relative;
 	top: 1px;
+}
+
+#button1{
+	background: url('./imgs/carbon.png') no-repeat;
+	background-size: cover;
+}
+
+#button2{
+	background: url('./imgs/27hours.png') no-repeat;
+	background-size: cover;
+}
+
+#button3{
+	background: url('./imgs/fidelidade.png') no-repeat;
+	background-size: cover;
+}
+
+#button4{
+	background: url('./imgs/wifi.png') no-repeat;
+	background-size: cover;
+}
+
+#button5{
+	background: url('./imgs/vip.png') no-repeat;
+	background-size: cover;
+}
+
+#button6{
+	background: url('./imgs/appmovida.png') no-repeat;
+	background-size: cover;
 }

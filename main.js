@@ -3,8 +3,8 @@ const { app, BrowserWindow } = require('electron')
 const ipc = electron.ipcMain
 
 function createWindow() {
-  buttons = new BrowserWindow({ width: 800, height: 600 })
-  videos = new BrowserWindow({ width: 800, height: 600 })
+  buttons = new BrowserWindow({ width: 400, height: 710, x: 810, y: 0 })
+  videos = new BrowserWindow({ width: 800, height: 600, x: 0, y: 0 })
   buttons.loadFile('./src/button-screen/buttons.html')
   videos.loadFile('./src/video-screen/videos.html')
 }

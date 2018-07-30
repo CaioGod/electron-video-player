@@ -1,15 +1,19 @@
 {
   "name": "movida-player",
   "version": "1.0.0",
+  "productName": "Movida Player Beta",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "dist-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^2.0.2"
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0"
   }
 }
