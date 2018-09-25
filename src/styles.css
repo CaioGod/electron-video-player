@@ -4,18 +4,30 @@ body{
 }
 
 p{
-	font: 16px/100% Arial, Helvetica, sans-serif;
-	color: white;
+	font: 16px/100% Tahoma;
+	color: red;
 	text-align: center;
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
 
+.subs {
+	width: 100%;
+	padding: 120px 0 ;
+	text-align: justify;
+	text-justify: inter-word;
+	font:30px
+}
+
+.subs p {
+	line-height: 30px;
+}
+
 .wrapper {
 	display: grid;
-  	grid-template-columns: 49% 49%;
+  	grid-template-columns: 33% 33% 31%;
   	grid-gap: 10px;
-  	background-color: #f26522;
+  	background-color: black;
   	color: #444;
 }
 
@@ -24,7 +36,7 @@ div{
 }
 
 button {
-	height: 180px;
+	height: 210px;
 	width: 100%;
 	display: inline-block;
 	outline: none;
@@ -41,31 +53,36 @@ button:active {
 }
 
 #button1{
-	background: url('./imgs/carbon.png') no-repeat;
-	background-size: cover;
-}
-
-#button2{
-	background: url('./imgs/27hours.png') no-repeat;
-	background-size: cover;
-}
-
-#button3{
-	background: url('./imgs/fidelidade.png') no-repeat;
-	background-size: cover;
-}
-
-#button4{
 	background: url('./imgs/wifi.png') no-repeat;
 	background-size: cover;
 }
 
+#button2{
+	background: url('./imgs/kids.png') no-repeat;
+	background-size: cover;
+}
+
+#button3{
+	background: url('./imgs/27hours.png') no-repeat;
+	background-size: cover;
+}
+
+#button4{
+	background: url('./imgs/carbonfree.jpeg') no-repeat;
+	background-size: cover;
+}
+
 #button5{
-	background: url('./imgs/vip.png') no-repeat;
+	background: url('./imgs/bagging.jpg') no-repeat;
 	background-size: cover;
 }
 
 #button6{
-	background: url('./imgs/appmovida.png') no-repeat;
+	background: url('./imgs/express.jpg') no-repeat;
+	background-size: cover;
+}
+
+#button7{
+	background: url('./imgs/intro.png') no-repeat;
 	background-size: cover;
 }

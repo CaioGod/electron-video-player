@@ -2,8 +2,11 @@ const electron = require('electron')
 const { app, BrowserWindow } = require('electron')
 const ipc = electron.ipcMain
 
-function createWindow() {
-  buttons = new BrowserWindow({ width: 400, height: 710, x: 810, y: 0 })
+var videos
+var buttons
+
+function createWindow () {
+  buttons = new BrowserWindow({ width: 800, height: 900, x: 810, y: 0 })
   videos = new BrowserWindow({ width: 800, height: 600, x: 0, y: 0 })
   buttons.loadFile('./src/button-screen/buttons.html')
   videos.loadFile('./src/video-screen/videos.html')
@@ -35,8 +38,39 @@ ipc.on('video-5', function (event) {
 })
 
 ipc.on('video-6', function (event) {
-  // recv button event and send to video
   videos.webContents.send('video-6')
+})
+
+ipc.on('video-7', function (event) {
+  videos.webContents.send('video-7')
+})
+
+ipc.on('ended-1', function (event) {
+  buttons.webContents.send('ended-1')
+})
+
+ipc.on('ended-2', function (event) {
+  buttons.webContents.send('ended-2')
+})
+
+ipc.on('ended-3', function (event) {
+  buttons.webContents.send('ended-3')
+})
+
+ipc.on('ended-4', function (event) {
+  buttons.webContents.send('ended-4')
+})
+
+ipc.on('ended-5', function (event) {
+  buttons.webContents.send('ended-5')
+})
+
+ipc.on('ended-6', function (event) {
+  buttons.webContents.send('ended-6')
+})
+
+ipc.on('ended-7', function (event) {
+  buttons.webContents.send('ended-7')
 })
 
 app.on('ready', createWindow)
