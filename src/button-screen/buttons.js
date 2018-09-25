@@ -57,7 +57,7 @@ video5.addEventListener('click', function () {
 video6.addEventListener('click', function () {
   buttons.style.display = 'none'
   subsDiv.style.display = ''
-  let sub = document.getElementById('legenda1')
+  let sub = document.getElementById('legenda6')
   sub.style.display = ''
   ipc.send('video-6')
 })
@@ -65,7 +65,7 @@ video6.addEventListener('click', function () {
 video7.addEventListener('click', function () {
   buttons.style.display = 'none'
   subsDiv.style.display = ''
-  let sub = document.getElementById('legenda1')
+  let sub = document.getElementById('legenda7')
   sub.style.display = ''
   ipc.send('video-7')
 })

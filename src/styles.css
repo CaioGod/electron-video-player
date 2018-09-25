@@ -13,7 +13,7 @@ p{
 
 .subs {
 	width: 100%;
-	padding: 120px 0 ;
+	padding: 400px 0 ;
 	text-align: justify;
 	text-justify: inter-word;
 	font:30px
@@ -31,12 +31,18 @@ p{
   	color: #444;
 }
 
+.cells {
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
 div{
 	display: inline-block;
 }
 
 button {
-	height: 210px;
+	height: 220px;
 	width: 100%;
 	display: inline-block;
 	outline: none;
@@ -83,6 +89,6 @@ button:active {
 }
 
 #button7{
-	background: url('./imgs/intro.png') no-repeat;
+	background: url('./imgs/intro.svg') no-repeat;
 	background-size: cover;
 }
