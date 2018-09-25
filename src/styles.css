@@ -1,6 +1,6 @@
 body{
   	background-color: black;
-  	overflow-y: hidden;
+  	overflow: hidden;
 }
 
 p{
@@ -26,7 +26,7 @@ p{
 .wrapper {
 	display: grid;
   	grid-template-columns: 33% 33% 31%;
-  	grid-gap: 10px;
+  	grid-gap: 1px;
   	background-color: black;
   	color: #444;
 }
@@ -34,7 +34,7 @@ p{
 .cells {
 	width: 50%;
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 div{
@@ -42,7 +42,7 @@ div{
 }
 
 button {
-	height: 220px;
+	height: 210px;
 	width: 100%;
 	display: inline-block;
 	outline: none;
