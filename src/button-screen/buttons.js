@@ -8,11 +8,18 @@ const video4 = document.getElementById('button4')
 const video5 = document.getElementById('button5')
 const video6 = document.getElementById('button6')
 const video7 = document.getElementById('button7')
+const back = document.getElementById('back')
 
 // Whenever a button is pressed we must lock all others until video has ended
 
 const subsDiv = document.getElementById('subs')
 const buttons = document.getElementById('buttons')
+
+back.addEventListener('click', function () {
+  buttons.style.display = 'none'
+  let intro = document.getElementById('intro')
+  intro.style.display = ''
+})
 
 video1.addEventListener('click', function () {
   buttons.style.display = 'none'
@@ -116,5 +123,7 @@ ipc.on('ended-7', function (event) {
   buttons.style.display = ''
   subsDiv.style.display = 'none'
   let sub = document.getElementById('legenda7')
+  let intro = document.getElementById('intro')
+  intro.style.display = 'none'
   sub.style.display = 'none'
 })

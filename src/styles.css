@@ -12,8 +12,9 @@ p{
 }
 
 .subs {
-	width: 100%;
-	padding: 400px 0 ;
+	width: 50%;
+	margin: 0, auto;
+	padding: 350px;
 	text-align: justify;
 	text-justify: inter-word;
 	font:30px
@@ -32,17 +33,13 @@ p{
 }
 
 .cells {
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
 	padding: 10px 0;
 }
 
-div{
-	display: inline-block;
-}
-
-button {
-	height: 220px;
+.cells button {
+	height: 300px;
 	width: 100%;
 	display: inline-block;
 	outline: none;
@@ -50,12 +47,40 @@ button {
 	border-radius: 50%;
 	background-color: #fff;
 }
+
+.intro {
+	width: 100%;
+	padding: 10px 0;
+}
+
+.intro button {
+	height: 450px;
+	width: 100%;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+div{
+	display: inline-block;
+}
+
+
 button:hover {
 	text-decoration: none;
 }
 button:active {
 	position: relative;
 	top: 1px;
+}
+
+#back {
+	padding: 10px 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #button1{
@@ -89,6 +114,8 @@ button:active {
 }
 
 #button7{
-	background: url('./imgs/intro.svg') no-repeat;
-	background-size: cover;
+	background: url('./imgs/intro.png') no-repeat;
+	background-size: contain;
+	background-position: center; /* Center the image */
+	background-color: #ee7203 
 }
