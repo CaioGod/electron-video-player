@@ -6,8 +6,8 @@ var videos
 var buttons
 
 function createWindow () {
-  buttons = new BrowserWindow({ width: 2880, height: 1800, x: 0, y: 0 })
-  videos = new BrowserWindow({ width: 800, height: 600, x: 0, y: 0 })
+  buttons = new BrowserWindow({ width: 2880, height: 1800, x: 0, y: 0, frame: false})
+  videos = new BrowserWindow({ width: 1280, height: 1024, x: 1280, y: 0, frame: false })
   buttons.loadFile('./src/button-screen/buttons.html')
   videos.loadFile('./src/video-screen/videos.html')
 }
@@ -73,4 +73,5 @@ ipc.on('ended-7', function (event) {
   buttons.webContents.send('ended-7')
 })
 
+app.disableHardwareAcceleration()
 app.on('ready', createWindow)
