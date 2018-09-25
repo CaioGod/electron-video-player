@@ -12,8 +12,8 @@ p{
 }
 
 .subs {
-	width: 100%;
-	padding: 400px 0 ;
+	width: 50%;
+	padding: 350px;
 	text-align: justify;
 	text-justify: inter-word;
 	font:30px
@@ -89,6 +89,8 @@ button:active {
 }
 
 #button7{
-	background: url('./imgs/intro.svg') no-repeat;
-	background-size: cover;
+	background: url('./imgs/intro.png') no-repeat;
+	background-size: contain;
+	background-position: center; /* Center the image */
+	background-color: #ee7203 
 }
