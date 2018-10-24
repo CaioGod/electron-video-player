@@ -4,25 +4,28 @@ body{
 }
 
 p{
-	font: 16px/100% Tahoma;
-	color: red;
+	font: 22px/100% Tahoma;
+	color: white;
 	text-align: center;
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
 
 .subs {
-	width: 50%;
-	overflow-x: hidden;
-	margin: 0, auto;
-	padding: 300px;
-	text-align: justify;
-	text-justify: inter-word;
-	font:30px
+	position:absolute; 
+	height:100%; 
+	width:100%;
+    display: table;
 }
 
-.subs p {
-	line-height: 30px;
+.subs h1 {
+	padding: 75px;
+	display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+	font: 24px/100% Tahoma;
+	color: white;
+	line-height: 60px;
 }
 
 .wrapper {
@@ -34,13 +37,13 @@ p{
 }
 
 .cells {
-	width: 65%;
+	width: 60%;
 	margin: 0 auto;
 	padding: 0px 0;
 }
 
 .cells button {
-	height: 280px;
+	height: 260px;
 	width: 100%;
 	display: inline-block;
 	outline: none;

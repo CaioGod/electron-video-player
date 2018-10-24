@@ -8,6 +8,8 @@ var buttons
 function createWindow () {
   buttons = new BrowserWindow({ width: 2880, height: 1800, x: 0, y: 0, frame: false})
   videos = new BrowserWindow({ width: 1280, height: 1024, x: 1280, y: 0, frame: false })
+  buttons.setFullScreen(true)
+  videos.setFullScreen(true)
   buttons.loadFile('./src/button-screen/buttons.html')
   videos.loadFile('./src/video-screen/videos.html')
 }
